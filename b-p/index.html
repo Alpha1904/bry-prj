@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download</title>
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        height: 100vh;
+        width: 100%;
+        padding: 100px;
+        background: url("images/str-bg.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .img-ctn {
+        height: 300px;
+        width: 300px;
+        background: url("images/download.png") no-repeat center;
+        background-size: cover;
+      }
+
+      .contain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .button {
+        --main-focus: #2d8cf0;
+        --font-color: #fcf5f5;
+        --bg-color-sub: #e7655b;
+        --bg-color: #794fad;
+        --main-color: #f2eded;
+        position: relative;
+        width: 190px;
+        height: 60px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 2px solid var(--main-color);
+        box-shadow: 4px 4px var(--main-color);
+        background-color: var(--bg-color);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .button,
+      .button__icon,
+      .button__text {
+        transition: all 0.3s;
+      }
+
+      .button .button__text {
+        transform: translateX(22px);
+        color: var(--font-color);
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      .button .button__icon {
+        position: absolute;
+        transform: translateX(148px);
+        height: 100%;
+        width: 39px;
+        background-color: var(--bg-color-sub);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button .svg {
+        width: 20px;
+        fill: var(--main-color);
+      }
+
+      .button:hover {
+        background: var(--bg-color);
+      }
+
+      .button:hover .button__text {
+        color: transparent;
+      }
+
+      .button:hover .button__icon {
+        width: 188px;
+        transform: translateX(0);
+      }
+
+      .button:active {
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px var(--main-color);
+      }
+      .popop {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 28, 28, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;/* From https://css.glass */
+background: rgba(248, 248, 250, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(248, 248, 250, 0.5);
+      }
+      input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: #f1f1f1;
+        transition: 0.3s;
+      }
+      label{
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .code{
+        color: violet;
+        font-size: 20px;
+      }
+      .popop button{
+        background: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- url = 'https://q.2nvu3.com/' -->
+    <div class="wrapper">
+        <div class="popop">
+            <form action="#">
+                <label for="pass">Enter the code No <span class="code"></span></label>
+                <br><input type="password" id="pass">
+                <button onclick="verify()">Enter</button>
+                <p class="wrg"></p>
+            </form>
+        </div>
+      <div class="contain">
+        <div class="img-ctn"></div>
+        <div class="btn-ctn"> 
+          <button class="button" type="button">
+            <span class="button__text">Freecine</span>
+            <span class="button__icon"
+              ><a href="https://q.2nvu3.com/" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 35 35"
+                id="bdd05811-e15d-428c-bb53-8661459f9307"
+                data-name="Layer 2"
+                class="svg"
+              >
+                <path
+                  d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
+                ></path>
+                <path
+                  d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
+                ></path>
+                <path
+                  d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
+                ></path></svg></a>
+            </span>
+          </button>
+            </a>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
